@@ -75,7 +75,7 @@ class WebScraper:
                 price_cell = cells[3]
                 price_text = price_cell.find_element(By.TAG_NAME, "span").text
                 
-                #Find the market Cap in coins between 
+                #Find the market Cap 
                 
                 cell = coin.find_elements(By.TAG_NAME, "td")
                 
