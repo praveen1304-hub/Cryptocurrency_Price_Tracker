@@ -1,3 +1,4 @@
+import time
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -36,6 +37,7 @@ class WebScraper:
         print("✓ Chrome WebDriver initialized successfully")
     def top_Coins(self):
         self.driver.get("https://coinmarketcap.com/")
+        time.sleep(5)  # Wait for the page to load, you can adjust this as needed
         try:
             # Wait until the table is loaded
             
